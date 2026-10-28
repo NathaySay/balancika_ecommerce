@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_ecommerces/features/menu/screens/menu_screen.dart';
 
 import 'features/ecommerce/screens/ecommerce_home_screen.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'MyApp',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const EcommerceHomeScreen(),
+      // home: const EcommerceHomeScreen(),
+      home: const MenuScreen(),
       themeAnimationDuration: Duration(seconds: 3),
     );
   }

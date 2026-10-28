@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_ecommerces/features/ecommerce/screens/ecommerce_home_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/menu_provider.dart';
@@ -32,6 +33,18 @@ class _MenuView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text('Menu', style: TextStyle(fontSize: 22)),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home_filled),
+            tooltip: 'Show Menu',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const EcommerceHomeScreen()),
+              );
+            },
+          ),
+        ],
       ),
       body: provider.isLoading
           ? const Center(child: CircularProgressIndicator())
