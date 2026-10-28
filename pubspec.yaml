@@ -1,0 +1,41 @@
+name: my_ecommerces
+description: "An e-commerce and menu scanning app."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^5.0.0
+
+  flutter_riverpod: ^2.5.1
+
+  # Navigation
+  go_router: ^14.2.0
+
+  # API
+  dio: ^5.4.0
+
+  # QR scanner
+  mobile_scanner: ^7.4.2
+
+  # Local storage / cache
+  shared_preferences: ^2.2.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Utils
+  intl: ^0.19.0          # price/date formatting
+  cached_network_image: ^3.3.1
+
+flutter:
+  uses-material-design: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
